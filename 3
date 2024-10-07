@@ -1,0 +1,18 @@
+// Função para calcular o fatorial de um número
+function calcularFatorial(numero) {
+    if (numero < 0) {
+        return "Fatorial não é definido para números negativos.";
+    }
+    
+    let fatorial = 1;
+    for (let i = 1; i <= numero; i++) {
+        fatorial *= i;
+    }
+    
+    return fatorial;
+}
+
+// Exemplo de uso
+let numero = parseInt(prompt("Digite um número:"));
+let resultado = calcularFatorial(numero);
+console.log("O fatorial de " + numero + " é " + resultado + ".");
