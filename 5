@@ -1,0 +1,25 @@
+function contarVogais(str) {
+    // Convertendo a string para minúsculas para facilitar a contagem
+    str = str.toLowerCase();
+    
+    // Definindo as vogais
+    const vogais = 'aeiou';
+    
+    // Inicializando o contador
+    let contador = 0;
+    
+    // Percorrendo cada caractere da string
+    for (let i = 0; i < str.length; i++) {
+        // Verificando se o caractere é uma vogal
+        if (vogais.includes(str[i])) {
+            contador++;
+        }
+    }
+    
+    // Retornando o número de vogais
+    return contador;
+}
+
+// Exemplo de uso
+const resultado = contarVogais("Olá, como você está?");
+console.log("Número de vogais:", resultado);
