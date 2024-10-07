@@ -1,0 +1,16 @@
+// Função para verificar se um ano é bissexto
+function verificarAnoBissexto(ano) {
+    if ((ano % 4 === 0 && ano % 100 !== 0) || (ano % 400 === 0)) {
+        return true;
+    } else {
+        return false;
+    }
+}
+
+// Exemplo de uso
+let ano = parseInt(prompt("Digite um ano:"));
+if (verificarAnoBissexto(ano)) {
+    console.log(ano + " é um ano bissexto.");
+} else {
+    console.log(ano + " não é um ano bissexto.");
+}
